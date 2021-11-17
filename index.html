@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pynk Test</title>
+    <!-- Fonts start -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Fonts end -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+<link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="table header-table">
+                <div class="cell">
+                    <i class="icon"></i>
+                </div>
+
+                <div class="cell">
+                    <img src="./assets/images/logo.jpg" class="logo" alt="Logo">
+                </div>
+
+                <div class="cell">
+                    <i class="icon"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="card">
+                <section class="section-alert">
+                    <div class="content">
+                        <h2>Alert</h2>
+
+                        <span>Alert</span> is a notification type which
+                        is fixed into the middle of the screen. 
+                        It has a content box which has a 425px max-width.
+                    </div>
+
+                    <button>Click to show Alert</button>
+                </section>
+                
+                <section class="section-modal">
+                    <div class="content">
+                        <h2>Modal</h2>
+
+                        <span>Modal</span> is a notification type which
+                        is full-screen-sized. It can be filled with any content.
+                    </div>
+
+                    <div class="buttons">
+                        <button class="button-modal-1">Click to show Modal-1</button>
+                        <button class="button-modal-2">Click to show Modal-2</button>
+                    </div>
+                </section>
+
+                <section class="section-popup">
+                    <div class="content">
+                        <h2>Popup</h2>
+
+                        <span>Popup</span> should be a notification type which
+                        opens by sliding from the bottom of the page. 
+                        <span>You are supposed to write code</span> for the popup notification
+                        including Javascript, CSS and HTML. Please check readMe.txt
+                        file before doing it.
+                    </div>
+
+                    <button onclick="Swal.fire({
+                        popup_notification,
+                        title: 'Heading',
+                        text: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
+                        showClass: {
+                        popup: 'animate__animated animate__fadeInUp'
+                        
+                        },
+                        hideClass: {
+                          popup: 'animate__animated animate__fadeOutDown'
+                        }
+                        
+                        })">Close Popup</button>
+                </section>
+
+                <section class="section-free-action">
+                    <div class="content">
+                        <h2>Free action</h2>
+
+                        We would like you to add 'Free action button' any functionality you wish.
+                        You are free to trigger anything when this button is clicked.
+                    </div>
+
+                    <button onclick="Swal.fire({
+                        position: 'top-center',
+                        icon: 'success',
+                        title: 'Your work has been saved',
+                        showConfirmButton: false,
+                        timer: 1500
+                      })">Save</button>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="table menu">
+                <div class="cell">
+                    <div class="menu-item">
+                        <i class="icon"></i>
+                        <span>Home</span>
+                    </div>
+                </div>
+
+                <div class="cell">
+                    <div class="menu-item">
+                        <i class="icon"></i>
+                        <span>About</span>
+                    </div>
+                </div>
+
+                <div class="cell">
+                    <div class="menu-item">
+                        <i class="icon"></i>
+                        <span>Settings</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Templates -->
+    <div class='alert'>
+        <div class='content'>
+            <div class='header'>
+                <h2><!-- --></h2>
+
+                <span class='close'>X</span>
+            </div>
+
+            <div class='body'>
+                <!-- -->
+            </div>
+
+            <div class='footer'>
+                <button class='close'><!-- --></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div class='modal modal-1'>
+        <div class='content'>
+            <h2>Modal 1</h2>
+            
+            <p>
+                Here is very simple content for the MODAL-1
+            </p>
+
+            <button class="close">
+                Close Modal
+            </button>
+        </div>
+    </div>
+
+    <div class='modal modal-2'>
+        <div class='content'>
+            <i class="close">X</i>
+
+            <h2>Modal 2</h2>
+            
+            <p>
+                This is a dummy content for the MODAL-2 
+            </p>
+        </div>
+    </div>
+
+<script type="text/javascript" >
+    const popup_button = document.querySelector('');
+</script>
+    <script type="text/javascript" src="./assets/js/libraries/jquery.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+    <script src="./assets/js/libraries/sweetalert2.all.min.js"></script>
+
+</body>
+</html>

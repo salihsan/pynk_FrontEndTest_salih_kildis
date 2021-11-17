@@ -1,0 +1,16 @@
+{
+    "notifications": [
+        {
+            "type": "Alert",
+            "title": "Alert Title",
+            "content": "Here is a very simple Alert content! Just an example...",
+            "button_text": "Close Alert"
+        },
+        {
+            "type": "Popup",
+            "title": "Popup Title",
+            "content": "This is an example content for the Popup type notification!",
+            "button_text": "Close Popup"
+        }
+    ]
+}
